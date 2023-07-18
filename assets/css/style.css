@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: black;
 }
 
@@ -9,8 +9,11 @@ body {
 }
 
 #search-button, #search-history button {
-    background: #6991e3;
     width: 100%;
+}
+
+#search-button {
+    background: #6991e3;
 }
 
 #current-weather {
