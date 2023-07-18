@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.custom-navbar {
+    background: linear-gradient(to right, #4558b6, #261360) !important;
+}
+
+#search-button, #search-history button {
+    background: #6991e3;
+    width: 100%;
+}
+
+#current-weather {
+    height: 300px;
+    padding: 20px;
+}
+
+.forecast {
+    width: 18%;
+    height: 180px; 
+}
+
+hr {
+    border-top: 1px solid lightgrey;
+}
