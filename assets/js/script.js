@@ -44,7 +44,7 @@ $(document).ready(function () {
   function searchForCity(cityName) {
     //creating the url for the first api call
     var apiUrl =
-      "http://api.openweathermap.org/geo/1.0/direct?" +
+      "https://api.openweathermap.org/geo/1.0/direct?" +
       "q=" +
       cityName +
       "&limit=5&appid=" +
@@ -65,7 +65,7 @@ $(document).ready(function () {
         var lon = data[0].lon;
         //creating the url for the second api fetch
         var secondApiUrl =
-          "http://api.openweathermap.org/data/2.5/forecast?" +
+          "https://api.openweathermap.org/data/2.5/forecast?" +
           "lat=" +
           lat +
           "&lon=" +
@@ -115,7 +115,7 @@ $(document).ready(function () {
           var windSpeed = data.wind.speed;
           var humidity = data.main.humidity;
           //icons require a custom link to be displayed, this line fetches the data for the proper icon from the api call, and places it into the link in the same line using the ` format
-          var weatherIcon = `http://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+          var weatherIcon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
           var dateString = date.format("MM/DD/YYYY");
           //in order to have slightly different designs for the main container, and the smaller ones yet have them still be made in the same function, the third isCurrent parameter was added, if the isCurrent parameter is true
           //we display it in a larger font style <h2> and include the city name
